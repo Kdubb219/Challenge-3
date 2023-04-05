@@ -1,5 +1,6 @@
 function GeneratePass() {
-    var len = prompt("How many characters in your password?");
+    var len = prompt("How many characters in your password?"); if (len < 8||len > 128 ) {alert('Your passwword must be between 8 and 129 characters. Please try again.'); return;}
+   
     var uppercase = prompt("Do you want uppercase in your password? (y/n)");
     var lowercase = prompt("Do you want lowercase in your password? (y/n)");
     var characters = prompt("Would you like to add special characters? (y/n)");
